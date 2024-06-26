@@ -1,7 +1,4 @@
-// import Image from "next/image";
-// import styles from "./page.module.css";
-
-
+import * as React from "react";
 import Intro from "./components/Intro";
 import NavBar from "./components/NavBar";
 
@@ -10,6 +7,6 @@ export default function Home() {
     <>
       <NavBar />
       <Intro />
-  </>
+      </>
   );
 }
