@@ -12,8 +12,11 @@ export default function NavBar(){
       setIsOpen(!isOpen);
     }
   
+    // this is triggered whenever a mouse clicks occurs anywhere on the document
     const handleClickOutside = (event) => {
-      if(dropdownRef.current && !dropdownRef.current.contains(event.target)){
+
+      // dropdownRef.current.contains(event.target) checks if the clicked element is inside the dropdown.
+      if( !dropdownRef.current.contains(event.target)){
         setIsOpen(false);
       }
     };
@@ -21,7 +24,7 @@ export default function NavBar(){
     useEffect(() => {
       document.addEventListener('mousedown', handleClickOutside);
 
-      return () => {
+      return () => { //optional clean up function that removes the event listener
         document.removeEventListener('mousedown', handleClickOutside);
       };
     }, []);
