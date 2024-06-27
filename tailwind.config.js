@@ -15,8 +15,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Epilogue", "sans-serif"]
-      }
+        sans: ['Epilogue', 'sans-serif'],
+      },
     },
   },
   darkMode: "class",

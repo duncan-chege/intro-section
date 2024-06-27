@@ -57,26 +57,26 @@ export default function NavBar(){
 
   {isOpen && (
         <div
-          className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-2 ring-medium-gray ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button" >
 
         <div className="py-1" role="none">
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1"
+            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
               id="menu-item-0">To do list</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1"
+            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
               id="menu-item-1">Calendar</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1"
+            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
               id="menu-item-2">Reminders</a>
-            <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1"
+            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
               id="menu-item-2">Planning</a>
           </div>
         </div>
       )}
       </div>
 
-      <p> Company </p>
+      <p className="font-sans"> Company </p>
       <p> Careers </p>
       <p> About </p>
     </div>
