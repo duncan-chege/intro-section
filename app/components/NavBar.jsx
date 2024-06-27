@@ -2,6 +2,11 @@
 
 import Image from "next/image"
 import Logo from "../../public/images/logo.svg"
+import CalendarIcon from "../../public/images/icon-calendar.svg"
+import PlanningIcon from "../../public/images/icon-planning.svg"
+import RemindersIcon from "../../public/images/icon-reminders.svg"
+import TodoIcon from "../../public/images/icon-todo.svg"
+
 import { useState, useEffect, useRef } from "react";
 
 export default function NavBar(){
@@ -44,7 +49,7 @@ export default function NavBar(){
             onClick={toggleDropdown} > Features
             
             <svg 
-              className="-ml-1 mt-1 h-5 w-5 text-gray-400"
+              className="-ml-1 h-5 w-5 text-gray-400"
               viewBox="0 0 20 20"
               fill="currentColor"
               aria-hidden="true" >
@@ -63,14 +68,14 @@ export default function NavBar(){
           aria-labelledby="menu-button" >
 
         <div className="py-1" role="none">
-            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
-              id="menu-item-0">To do list</a>
-            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
-              id="menu-item-1">Calendar</a>
-            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
-              id="menu-item-2">Reminders</a>
-            <a href="#" className="block px-4 py-2 text-sm text-medium-gray" role="menuitem" tabIndex="-1"
-              id="menu-item-2">Planning</a>
+            <a href="#" className="flex px-4 py-2 text-sm text-medium-gray w-max" role="menuitem" tabIndex="-1"
+              id="menu-item-0"><span className="pr-2"><Image src={TodoIcon} /></span>To do list</a>
+            <a href="#" className="flex px-4 py-2 text-sm text-medium-gray w-max" role="menuitem" tabIndex="-1"
+              id="menu-item-1"><span className="pr-2"><Image src={CalendarIcon} /></span>Calendar</a>
+            <a href="#" className="flex px-4 py-2 text-sm text-medium-gray w-max" role="menuitem" tabIndex="-1"
+              id="menu-item-2"><span className="pr-2"><Image src={RemindersIcon} /></span>Reminders</a>
+            <a href="#" className="flex px-4 py-2 text-sm text-medium-gray w-max" role="menuitem" tabIndex="-1"
+              id="menu-item-2"><span className="pr-2"><Image src={PlanningIcon} /></span>Planning</a>
           </div>
         </div>
       )}
