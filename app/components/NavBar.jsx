@@ -53,8 +53,8 @@ export default function NavBar(){
   
   return (
   <nav className="bg-transparent m-4 flex flex-row justify-between">
-   <Image className="flex-none shrink-0" src={Logo} alt="" /> {/* Assuming Logo is imported and defined */}      
-      <div className="flex flex-row w-2/5 justify-evenly">
+   <Image className="flex-none shrink-0 object-contain" src={Logo} alt="" /> {/* Assuming Logo is imported and defined */}      
+      <div className="flex flex-row md:w-3/5 lg:w-2/5 justify-evenly items-center">
         
         {/* First Dropdown */}
         <div className="relative inline-block text-left" ref={dropdownRefs.features}>
@@ -72,7 +72,7 @@ export default function NavBar(){
 
         {dropdowns.features && (
           <div
-            className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-2 ring-medium-gray ring-opacity-5 focus:outline-none"
+            className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-almost-white shadow-lg ring-2 ring-medium-gray ring-opacity-5 focus:outline-none"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button-features"
@@ -130,9 +130,9 @@ export default function NavBar(){
         <a href="#" className="text-medium-gray hover:text-almost-black"> About </a>
       </div>
   
-    <div className="flex flex-row w-1/5 justify-evenly ml-auto">
+    <div className="flex flex-row md:w-2/5 lg:w-1/5 justify-evenly ml-auto">
       <button className="text-medium-gray hover:text-almost-black">Login</button>
-      <button className="text-medium-gray hover:text-almost-black border-2 border-medium-gray hover:border-almost-black px-2.5 py-1.5 rounded-lg">Register</button>
+      <button className="text-medium-gray hover:text-almost-black border-2 border-medium-gray hover:border-almost-black px-2.5 py-1.5 rounded-xl">Register</button>
     </div>
   </nav>
 
