@@ -52,7 +52,7 @@ export default function NavBar(){
     }, []);
   
   return (
-  <nav className="bg-transparent m-8 flex flex-row justify-between">
+  <nav className="bg-transparent m-4 flex flex-row justify-between">
    <Image className="flex-none shrink-0" src={Logo} alt="" /> {/* Assuming Logo is imported and defined */}      
       <div className="flex flex-row w-2/5 justify-evenly">
         
