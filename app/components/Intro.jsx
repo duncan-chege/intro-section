@@ -7,20 +7,20 @@ import HeroImage from "../../public/images/image-hero-desktop.png"
 
 export default function Intro(){
     return(
-        <div className="flex flex-row lg:mx-36 md:mx-8 gap-6">
-            <div className="basis-1/2">
-                <h1 className="mt-28 text-6xl font-bold">Make<br/> remote work</h1>
-                <p className="mt-8 text-medium-gray md:w-3/5">Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar</p>
-                <a href="#" className="py-3 px-6 my-10 border-2 hover:border-almost-black hover:bg-almost-white hover:text-almost-black font-medium rounded-xl inline-block bg-almost-black text-almost-white">Learn More</a>
-            <div className="flex flex-row justify-between my-10">
-                <Image src={Audiophile} className="object-contain" alt="" />
-                <Image src={Databiz} className="object-contain" alt="" />
-                <Image src={Maker} className="object-contain" alt="" />
-                <Image src={Meet} className="object-contain" alt="" />
+        <div className="flex flex-row sm:flex-nowrap flex-wrap-reverse lg:mx-36 sm:mx-8 gap-6">
+            <div className="sm:basis-1/2 sm:mx-0 mx-4">
+                <h1 className="mt-4 sm:mt-28 w-full sm:w-2/3 sm:text-left text-center text-4xl sm:text-6xl font-bold">Make remote work</h1>
+                <p className="mt-8 w-full sm:w-3/5 sm:text-left text-center text-medium-gray">Get your team in sync, no matter your location. Streamline processes, create team rituals and watch productivity soar</p>
+                <a href="#" className="block w-max py-3 px-6 mx-auto sm:mx-0 my-10 border-2 font-medium rounded-xl bg-almost-black text-almost-white hover:border-almost-black hover:bg-almost-white hover:text-almost-black">Learn More</a>
+                <div className="flex flex-row justify-between my-10 gap-x-4">
+                    <Image src={Audiophile} className="flex-grow basis-0 min-w-0 sm:max-w-fit max-w-full object-contain" alt="Audiophile" />
+                    <Image src={Databiz} className="flex-grow basis-0 min-w-0 sm:max-w-fit max-w-full object-contain" alt="Databiz" />
+                    <Image src={Maker} className="flex-grow basis-0 min-w-0 sm:max-w-fit max-w-full object-contain" alt="Maker" />
+                    <Image src={Meet} className="flex-grow basis-0 min-w-0 sm:max-w-fit max-w-full object-contain" alt="Meet" />
+                </div>
             </div>
-            </div>
-            <div className="basis-1/2">
-                <Image src={HeroImage} className="object-contain lg:h-4/6 md:h-full" alt="" />
+            <div className="sm:basis-1/2">
+                <Image src={HeroImage} className="lg:h-4/6 sm:h-full object-contain w-full" alt="" />
             </div>
         </div>
     )
