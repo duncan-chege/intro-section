@@ -110,7 +110,7 @@ export default function NavBar(){
 
           {dropdowns.company && (
             <div
-              className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-2 ring-medium-gray ring-opacity-5 focus:outline-none"
+              className="absolute right-0 z-10 mt-2 origin-top-right rounded-md bg-almost-white shadow-lg ring-2 ring-medium-gray ring-opacity-5 focus:outline-none"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="menu-button-company"
