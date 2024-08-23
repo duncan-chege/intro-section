@@ -63,7 +63,7 @@ export default function NavBar({isMobileMenuOpen, setIsMobileMenuOpen}){
   }, []);
 
   return (
-    <nav className="bg-transparent m-4 flex flex-row justify-between">
+    <nav className="bg-transparent p-4 flex flex-row justify-between">
 
       <Image className="flex-none shrink-0 object-contain" src={Logo} alt="Logo" />
 
