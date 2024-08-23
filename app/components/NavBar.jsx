@@ -14,9 +14,7 @@ import ArrowUp from "../../public/images/icon-arrow-up.svg"
 
 import { useState, useEffect, useRef } from "react";
 
-export default function NavBar(){
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+export default function NavBar({isMobileMenuOpen, setIsMobileMenuOpen}){
   const [dropdowns, setDropdowns] = useState({
     desktopFeatures: false,
     desktopCompany: false,
