@@ -48,7 +48,7 @@ export default function NavBar(){
 
   const handleClickOutside = (event) => {
     for (const key in dropdownRefs) {
-      if (!dropdownRefs[key].current.contains(event.target)) {
+      if (dropdownRefs[key].current && !dropdownRefs[key].current.contains(event.target)) {
         setDropdowns((prevDropdowns) => ({
           ...prevDropdowns,
           [key]: false,
