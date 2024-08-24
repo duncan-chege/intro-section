@@ -22,7 +22,7 @@ export default function Intro(){
                 </div>
             </div>
             <div className="md:basis-1/2">
-                <Image src={DesktopHeroImage} className="hidden md:block object-contain w-full" style={{height: "calc(100vh - 4rem)"}} alt="" />
+                <Image src={DesktopHeroImage} className="hidden md:block object-contain w-full" style={{height: "calc(100vh - 170px)"}} alt="" />
                 <Image src={MobileHeroImage} className="block md:hidden mt-8 object-contain w-full" alt="" />
             </div>
         </div>
