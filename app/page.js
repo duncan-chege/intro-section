@@ -9,7 +9,8 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className={`min-h-screen ${isMobileMenuOpen ? "bg-almost-black/75" : ""}`}>
+    <div className="min-h-screen relative">
+      <div className={`${isMobileMenuOpen ? "absolute inset-0 bg-almost-black opacity-50" : ""}`}></div>
       <NavBar isMobileMenuOpen={isMobileMenuOpen} setIsMobileMenuOpen={setIsMobileMenuOpen} />
       <Intro isMobileMenuOpen={isMobileMenuOpen} />
     </div>

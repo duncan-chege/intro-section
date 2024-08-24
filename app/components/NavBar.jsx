@@ -68,7 +68,7 @@ export default function NavBar({isMobileMenuOpen, setIsMobileMenuOpen}){
       <Image className="flex-none shrink-0 object-contain" src={Logo} alt="Logo" />
 
       {/* Hamburger icon for mobile */}
-      <button className="md:hidden z-50" onClick={toggleMobileMenu}>
+      <button className="md:hidden z-50 fixed right-0" onClick={toggleMobileMenu}>
         <Image src={isMobileMenuOpen ? CloseIcon : HamburgerIcon} alt="menu icon" />
       </button>
 
