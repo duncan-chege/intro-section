@@ -8,7 +8,7 @@ This is the top introduction section of a webpage with dropdown navigation items
 - See hover states for all interactive elements on the page
 ## Tech Stack
 
-- **Client:** NextJS, Tailwind CSS
+- **Client:** Next JS, Tailwind CSS
 - **Deployed under:** Vercel
 
 ## Live Link
